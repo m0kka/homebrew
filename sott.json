@@ -1,0 +1,229 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "SoTT",
+				"abbreviation": "SoTT",
+				"full": "Secret of Twilight Tower",
+				"authors": [
+					"Mokka"
+				],
+				"version": "1.0",
+				"url": "https://github.com/TheGiddyLimit/homebrew",
+				"targetSchema": "1.2.0"
+			}
+		],
+		"dateAdded": 0
+	},
+	"monster": [
+		{
+			"source": "SoTT",
+			"name": "Displacer Cub",
+			"size": "S",
+			"type": "monstrosity",
+			"alignment": [
+                "L",
+                "E"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 36,
+				"formula": "8d6+8"
+			},
+			"speed": {
+				"walk": 45
+			},
+			"str": 14,
+			"dex": 13,
+			"con": 12,
+			"int": 5,
+			"wis": 5,
+			"cha": 7,
+			"skill": {
+				"stealth": "+5"
+			},
+			"senses": [
+				"darkvision 30 ft."
+            ],
+            "passive": 9,
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Unlearned Displacement {@recharge 5}",
+					"entries": [
+						"The displacer cub projects a magical illusion that makes it appear to be standing near its actual location, causing attack rolls against it to have disadvantage. If it is hit by an attack, this trait is disrupted until the end of its next turn at which point it must roll a 5 or 6 on a d6. This trait is also disrupted while the little beast is incapacitated or has a speed of 0."
+					]
+				},
+				{
+					"name": "Cry For Help",
+					"entries": [
+						"For its turn, the cub ushers a cry for help if it feels threatened or lost. Roll on the Cry for Help table below to see what occurs."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The displacer cub makes two attacks with its tentacles."
+					]
+				},
+				{
+					"name": "Tentacle",
+					"entries": [
+						"{@atk mw} {@hit +3} to hit, range 5 ft., one target. {@h}7 ({@damage 2d4 + 2}) bludgeoning damage."
+					]
+				}
+			],
+			"page": 0,
+			"tokenUrl": "https://i.imgur.com/oirFSbl.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/pVlC5cZ.png"
+						}
+					}
+				],
+				"entries": [
+					"This diminutive predator is the child version of a displacer beast. A displacer cub resembles a sleek, great cat covered in blue-black fur. Its otherworldly origins are clear in its six legs and the two tentacles sprouting from its shoulders, both ending in smooth pads."
+				]
+			}
+        },
+        {
+			"source": "SoTT",
+			"name": "Elder Displacer Beast",
+			"size": "L",
+			"type": "monstrosity",
+			"alignment": [
+                "L",
+                "E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 170,
+				"formula": "20d10+60"
+			},
+			"speed": {
+				"walk": 45
+			},
+			"str": 20,
+			"dex": 20,
+			"con": 16,
+			"int": 10,
+			"wis": 12,
+			"cha": 8,
+			"save": {
+				"str": "+9"
+			},
+			"skill": {
+                "perception": "+5",
+				"stealth": "+9"
+			},
+			"conditionImmune": [
+				"charmed"
+			],
+			"senses": [
+				"darkvision 60 ft."
+            ],
+            "passive": 11,
+			"cr": "9",
+			"trait": [
+				{
+					"name": "Keen Displacement",
+					"entries": [
+						"The displacer elder projects a magical illusion that makes it appear to be standing near its actual location, causing attack rolls against it to have disadvantage. If it is hit by an attack, this trait is disrupted until an attack against it misses or the end of its next turn, whichever is sooner. This trait is also disrupted while the displacer beast is incapacitated or has a speed of 0."
+					]
+                },
+                {
+                    "name": "Avoidance",
+                    "entries" : [
+                        "If the displacer elder is subjected to an effect that allows it to make a saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+                    ]
+                },
+				{
+					"name": "Cry For Help",
+					"entries": [
+						"For its turn, the cub ushers a cry for help if it feels threatened or lost. Roll on the Cry for Help table below to see what occurs."
+					]
+                },
+                {
+                    "name": "Steel Mind",
+                    "entries": [
+                        "The elder displacer beast is immune to being charmed."
+                    ]
+                },
+                {
+                    "name": "Hind Legs",
+                    "entries": [
+                        "The displacer elder can use half its movement to rest on its four hind legs to attack with a bite and its two front paws."
+                    ]
+                }
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The elder displacer beast makes two attacks with its tentacles or pounces at one target. If on its hind legs, it instead makes three melee attacks: two claw attacks and one bite attack."
+					]
+				},
+				{
+					"name": "Tentacle",
+					"entries": [
+						"{@atk mw} {@hit +7} to hit, range 10 ft., one target. {@h}13 ({@damage 2d6 + 6}) bludgeoning damage plus {@h}7 ({@damage 2d6}) piercing damage."
+					]
+                },
+                {
+                    "name": "Pounce {@recharge 5}",
+                    "entries": [
+                        "The elder displacer beast uses half its movement to leap towards a target with 20 ft. It then makes one Bite attack against the target with advantage. On a hit, and if the target is Medium or smaller, the target must succeed a DC 16 Strength check or be knocked prone."
+                    ]
+                },
+                {
+                    "name": "Bite",
+                    "entries": [
+                        "{@atk mw} {@hit +7} to hit, range 5 ft., one target. {@h}19 ({@damage 3d6 + 6}) piercing damage."
+                    ]
+                },
+                {
+                    "name": "Claws",
+                    "entries": [
+                        "{@atk mw} {@hit +7} to hit, range 5 ft., one target. {@h}19 ({@damage 2d6 + 6}) slashing damage."
+                    ]
+                }
+			],
+			"page": 0,
+			"tokenUrl": "https://i.imgur.com/M74D0fr.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/oty2W0o.jpg"
+						}
+					}
+				],
+				"entries": [
+					"This monstrous predator is the elder version of a displacer beast, a beast that takes its name from its ability to displace light so that it appears to be several feet away from its actual location. A displacer elder resembles a sleek, great cat covered in gray-black fur. However, its otherworldly origins are clear in its six legs and the two tentacles sprouting from its shoulders, both ending in pads tipped with spiky protrusions. A displacer elder's eyes glow with an awful malevolence that persists even in death."
+				]
+			}
+		}
+	]
+}
