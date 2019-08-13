@@ -224,6 +224,78 @@
 					"This monstrous predator is the elder version of a displacer beast, a beast that takes its name from its ability to displace light so that it appears to be several feet away from its actual location. A displacer elder resembles a sleek, great cat covered in gray-black fur. However, its otherworldly origins are clear in its six legs and the two tentacles sprouting from its shoulders, both ending in pads tipped with spiky protrusions. A displacer elder's eyes glow with an awful malevolence that persists even in death."
 				]
 			}
+		},
+        {
+			"source": "SoTT",
+			"name": "Parrot",
+			"size": "T",
+			"type": "beast",
+			"alignment": [
+                "U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 3,
+				"formula": "1d8-1"
+			},
+			"speed": {
+				"walk": 10,
+				"fly": 40
+			},
+			"str": 2,
+			"dex": 15,
+			"con": 8,
+			"int": 2,
+			"wis": 15,
+			"cha": 7,
+			"skill": {
+				"perception": "+6",
+				"deception": "+8"
+			},
+			"senses": [
+				"darkvision 60 ft."
+            ],
+            "passive": 14,
+			"cr": "1/4",
+			"trait": [
+				{
+					"name": "Sound Mimicry",
+					"entries": [
+						"Parrots are excellent at learning and copying sounds they hear often, from creaking boards to even specific voices. The parrot makes a Deception check opposed by the listener’s Insight check to recognize the mimicry, although if the listener isn’t keenly familiar with the person or type of sounds mimicked, it gains disadvantage on the Insight check. The parrot has a +8 racial bonus on its Deception check to mimic sounds it has listened to for at least 1 week. This ability does not allow the parrot to speak or understand languages, it simply imitates them."
+					]
+                }
+			],
+			"action": [
+				{
+					"name": "Beak",
+					"entries": [
+						"{@atk mw} {@hit +4} to hit, range 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+					]
+                }
+			],
+			"page": 0,
+			"tokenUrl": "https://i.imgur.com/VIbgRfg.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/QOMYWbx.jpg"
+						}
+					}
+				],
+				"entries": [
+					"This brightly-colored bird has a strong, curved bill and stands almost two feet tall. The sparkle in its eyes belie a clear intelligence greater than that many other animals possess. Parrots are natural mimics, and are famed for their ability to repeat words and short phrases they have been taught. They are seed eaters, and not generally aggressive, but their powerful beaks are fully capable of severing a finger that is poked too close to them. They can manipulate objects using their feet and beaks with enough dexterity to put a key in a lock and turn it if they have been trained to do so."
+				]
+			}
 		}
 	]
 }
