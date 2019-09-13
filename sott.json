@@ -296,6 +296,851 @@
 					"This brightly-colored bird has a strong, curved bill and stands almost two feet tall. The sparkle in its eyes belie a clear intelligence greater than that many other animals possess. Parrots are natural mimics, and are famed for their ability to repeat words and short phrases they have been taught. They are seed eaters, and not generally aggressive, but their powerful beaks are fully capable of severing a finger that is poked too close to them. They can manipulate objects using their feet and beaks with enough dexterity to put a key in a lock and turn it if they have been trained to do so."
 				]
 			}
+		},
+        {
+			"source": "SoTT",
+			"name": "Corrupted Deva",
+			"size": "M",
+			"type": "celestial",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 100,
+				"formula": "16d8+48"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 60
+			},
+			"str": 18,
+			"dex": 16,
+			"con": 16,
+			"int": 14,
+			"wis": 18,
+			"cha": 20,
+			"save": {
+				"wis": "+8",
+				"cha": "+9"
+			},
+			"skill": {
+				"perception": "+8",
+				"intimidation": "+9"
+			},
+			"resist": [
+				"psychic",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened"
+			],
+			"senses": [
+				"darkvision 120 ft."
+            ],
+			"passive": 18,
+			"languages": [
+				"all",
+				"telepathy 120 ft."
+			],
+			"cr": "10",
+			"trait": [
+				{
+					"name": "Corrupted Weapons",
+					"entries": [
+						"The Corrupted Deva's weapon attacks are magical. When the Corrupted Deva hits with any weapon, the weapon deals an extra 4d8 psychic damage (included in the attack)."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The deva has advantage on saving throws against spells and other magical effects."
+					]
+                }
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Corrupted Deva makes two melee attacks."
+					]
+                },
+				{
+					"name": "Iron Mace",
+					"entries": [
+						"{@atk mw} {@hit +8} to hit, range 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) bludgeoning damage, plus {@h}16 ({@damage 4d8}) psychic damage."
+					]
+                },
+				{
+					"name": "Mind Rend",
+					"entries": [
+						"The Corrupted Deva links its warped mind with that of one creature within 30 ft. The target must make a DC 17 Charisma save or be stunned until the end of their next turn. If they fail this check by 5 or more they also take {@h}27 (@damage 6d8) psychic damage."
+					]
+                }
+			],
+			"page": 0,
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The Corrupted Deva's innate spellcasting ability is Charisma (spell save {@dc 17}). It can innately cast the following spells, requiring only verbal components:"
+					],
+					"will": [
+						"{@spell command}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell Tasha's hideous laughter}",
+							"{@spell Evard's black tentacles}"
+						]
+					},
+					"ability": "cha"
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/arPutJt.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/DfqIvGA.jpg"
+						}
+					}
+				],
+				"entries": [
+					""
+				]
+			}
+		},
+        {
+			"source": "SoTT",
+			"name": "Shinoh",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"elf"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"breastplate"
+					]
+				}
+			],
+			"hp": {
+				"average": 75,
+				"formula": "10d10+20"
+			},
+			"speed": {
+				"walk": 35
+			},
+			"str": 12,
+			"dex": 14,
+			"con": 15,
+			"int": 18,
+			"wis": 20,
+			"cha": 17,
+			"save": {
+				"wis": "+7",
+				"cha": "+7"
+			},
+			"skill": {
+				"perception": "+9",
+				"religion": "+8"
+			},
+			"senses": [
+				"blindsight 120 ft. (blind beyond this radius)"
+            ],
+			"passive": 8,
+			"languages": [
+				"all",
+				"telepathy 120 ft."
+			],
+			"cr": "10",
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The deva has advantage on saving throws against spells and other magical effects."
+					]
+                }
+			],
+			"action": [
+				{
+					"name": "Mace",
+					"entries": [
+						"{@atk mw} {@hit +5} to hit, range 5 ft., one target. {@h}5 ({@damage 1d6 + 1}) bludgeoning damage."
+					]
+                }
+			],
+			"page": 0,
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Shinoh is an 11th-level spellcaster. His spellcasting ability is Wisdom (spell save {@dc 17}, {@hit 9} to hit with spell attacks), he has the following cleric spells prepared:"
+					],
+					"0": {
+						"spells": [
+							"{@spell mending}",
+							"{@spell sacred flame}",
+							"{@spell thaumaturgy}"
+						]
+					},
+					"1": {
+						"slots": 4,
+						"spells": [
+							"{@spell bane}",
+							"{@spell command}",
+							"{@spell cure wound}"
+						]
+					},
+					"2": {
+						"slots": 3,
+						"spells": [
+							"{@spell calm emotions}",
+							"{@spell hold person}"
+						]
+					},
+					"3": {
+						"slots": 3,
+						"spells": [
+							"{@spell bestow curse}",
+							"{@spell dispel magic}"
+						]
+					},
+					"4": {
+						"slots": 3,
+						"spells": [
+							"{@spell banishment}",
+							"{@spell divination}"
+						]
+					},
+					"5": {
+						"slots": 2,
+						"spells": [
+							"{@spell legend lore}",
+							"{@spell geas}"
+						]
+					},
+					"6": {
+						"slots": 1,
+						"spells": [
+							"{@spell harm}"
+						]
+					},
+					"ability": "wis"
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/cpkAcDp.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/NVTagS8.jpg"
+						}
+					}
+				],
+				"entries": [
+					""
+				]
+			}
+		},
+		{
+			"source": "SoTT",
+			"name": "Tempani",
+			"size": "L",
+			"type": "celestial",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 21,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 243,
+				"formula": "18d10+144"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 60
+			},
+			"str": 26,
+			"dex": 22,
+			"con": 26,
+			"int": 28,
+			"wis": 24,
+			"cha": 30,
+			"save": {
+				"int": "+16",
+				"wis": "+14",
+				"cha": "+17"
+			},
+			"skill": {
+				"perception": "+14"
+			},
+			"resist": [
+				"psychic",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened"
+			],
+			"senses": [
+				"truesight 120 ft."
+            ],
+			"passive": 24,
+			"languages": [
+				"all",
+				"telepathy 120 ft."
+			],
+			"cr": "20",
+			"trait": [
+				{
+					"name": "Corrupted Weapons",
+					"entries": [
+						"Tempani's weapon attacks are magical. When she hits with any weapon, the weapon deals an extra 6d8 psychic damage (included in the attack)."
+					]
+				},
+				{
+					"name": "Warped Awareness",
+					"entries": [
+						"If Tempani looks a creature in the eyes, she knows its greatest fear."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Tempani has advantage on saving throws against spells and other magical effects."
+					]
+                }
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Tempani makes two greatsword attacks."
+					]
+                },
+				{
+					"name": "Greatsword",
+					"entries": [
+						"{@atk mw} {@hit +15} to hit, range 10 ft., one target. {@h}22 ({@damage 4d6 + 8}) slashing damage, plus {@h}27 ({@damage 6d8}) psychic damage."
+					]
+                },
+				{
+					"name": "Word of Truth",
+					"entries": [
+						"Tempani whispers a horrible truth of the Far Realms into the mind of one creature within 30 ft. The target must make a {@dc 25} Charisma save or take {@h}27 ({@damage 6d8}) psychic damage. If they fail this check by 10 or more they are dominated by Tempani until the end of their next turn and suffer the effect of one short-term madness."
+					]
+                },
+				{
+					"name": "Merge (only available when below half hp)",
+					"entries": [
+						"Tempani reaches out to an Elder Being within 5ft. and merges with it, transforming into the Divine Horror."
+					]
+                }
+			],
+			"legendary": [
+				{
+					"name": "Options",
+					"entries": [
+						"Tempani can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. Tempani regains spent legendary actions at the start of her turn."
+					]
+				},
+				{
+					"name": "Teleport",
+					"entries": [
+						"Tempani magically teleports, along with any equipment she is wearing or carrying, up to 120 ft. to an unoccupied space she can see."
+					]
+				},
+				{
+					"name": "Maddening Burst (2 actions)",
+					"entries": [
+						"Tempani emits a burst of psychic energy. Each creature of her choice in a 10 ft. radius must make a {@dc 23} Dexterity save, taking {@h}14 ({@damage 4d6}) psychic damage plus {@h}14 ({damage 4d6}) necrotic damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"page": 0,
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"Tempani's spellcasting ability is Charisma (spell save {@dc 25}). She can innately cast the following spells, requiring only verbal components:"
+					],
+					"will": [
+						"{@spell invisibility}"
+					],
+					"daily": {
+						"3e": [
+							"Tasha's hideous laughter",
+							"Evard's black tentacles"
+						],
+						"1e": [
+							"{@spell eyebite}"
+						]
+					},
+					"ability": "cha"
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/kPqV5nW.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/HnVeAgv.png"
+						}
+					}
+				],
+				"entries": [
+					""
+				]
+			}
+		},
+		{
+			"source": "SoTT",
+			"name": "Elder Being",
+			"size": "H",
+			"type": "abberation",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 330,
+				"formula": "20d12+200"
+			},
+			"speed": {
+				"walk": 60
+			},
+			"str": 30,
+			"dex": 8,
+			"con": 30,
+			"int": 30,
+			"wis": 18,
+			"cha": 13,
+			"save": {
+				"con": "+17",
+				"int": "+17"
+			},
+			"resist": [
+				"psychic",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened"
+			],
+			"senses": [
+				"truesight 120 ft."
+            ],
+			"passive": 14,
+			"cr": "20",
+			"trait": [
+				{
+					"name": "Twisted Hands",
+					"entries": [
+						"The Elder Being's weapon attacks are magical. When it hits with any weapon, the weapon deals an extra 8d8 psychic damage (included in the attack)."
+					]
+				},
+				{
+					"name": "Impossible Flesh",
+					"entries": [
+						"The Elder Being's body does not obey conventional laws of biology or geometry. When a creature hits the Elder Being with an attack it must roll a d20. On a result of less than ten, the attack misses."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The Elder Being has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Warping Aura",
+					"entries": [
+						"All creatures that come within 20 ft. of the Elder Being, or who start their turn within 20 ft., must roll on the following chart:",
+						{
+							"type": "table",
+							"caption": "Warping Aura Effect",
+							"colLabels": [
+								"{@dice d6}",
+								"Effect"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									{
+										"type": "cell",
+										"roll": {
+											"exact": 1,
+											"pad": true
+										}
+									},
+									"{@The creature becomes highly magnetised.} For each non-secured source of metal within 30 ft. (creatures count as singly sources, no matter how many items they are carrying) they are subjected to a ranged attack made with a {@hit 10} to hit, causing {@h}6 ({@damage 1d6+3}) bludgeoning damage on a hit. Creatures holding metal items may attempt to hold onto them by making a {@dc 18} Strength saving throw."
+								],
+								[
+									{
+										"type": "cell",
+										"roll": {
+											"exact": 2
+										}
+									},
+									"{@b The ground around the creature momentarily liquefies.} If the creature is standing on solidground they must succeed on a {@dc 18} Dexterity saving throw or be restrained. As an action, they or another creatures within 5 ft. can attempt to free them, requiring a {@dc 18} Strength (Athletics) check."
+								],
+								[
+									{
+										"type": "cell",
+										"roll": {
+											"exact": 3
+										}
+									},
+									"{b Gravity reverses for the creature.} They begin to fall upwards at a rate of 60 ft. per turn. This lasts until the beginning of their next turn."
+								],
+								[
+									{
+										"type": "cell",
+										"roll": {
+											"exact": 4
+										}
+									},
+									"{@b The creature is caught in a brief time loop.} They must attempt to repeat the actions of their previous turn. This does not consume any extra resources (spell slots, items, etc.)."
+								],
+								[
+									{
+										"type": "cell",
+										"roll": {
+											"exact": 5
+										}
+									},
+									"{@b The creature skips forward in time.} They disappear from play and reappear at the start of their next turn."
+								],
+								[
+									{
+										"type": "cell",
+										"roll": {
+											"exact": 6
+										}
+									},
+									"{@b An alien presence filters into their mind.} They must make a {@dc 18} Charisma saving throw or be stunned until the start of their next turn. On as success, however, they gain a portion of it’s intellect, increasing their Intelligence to 30 for one minute."
+								]
+							]
+						}
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Elder Being makes one smash attack and one dread gaze attack."
+					]
+                },
+				{
+					"name": "Smash",
+					"entries": [
+						"{@atk mw} {@hit +17} to hit, range 10 ft., one target. {@h}24 ({@damage 4d6 + 10}) bludgeoning damage, plus {@h}36 ({@damage 8d8}) psychic damage."
+					]
+                },
+				{
+					"name": "Dread Gaze",
+					"entries": [
+						"The Elder Being turns its gaze upon one creature that can see it. The target must make a {@dc 25} Charisma saving throw or suffer the effects of the {@spell confusion} spell."
+					]
+                }
+			],
+			"page": 0,
+			"tokenUrl": "https://i.imgur.com/rYstXUL.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/csixI4n.jpg"
+						}
+					}
+				],
+				"entries": [
+					""
+				]
+			}
+		},
+		{
+			"source": "SoTT",
+			"name": "Divine Horror",
+			"size": "H",
+			"type": "abberation",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 330,
+				"formula": "20d12+200"
+			},
+			"speed": {
+				"walk": 60,
+				"fly": 60
+			},
+			"str": 30,
+			"dex": 12,
+			"con": 30,
+			"int": 30,
+			"wis": 24,
+			"cha": 16,
+			"save": {
+				"con": "+17",
+				"int": "+17",
+				"wis": "+14"
+			},
+			"resist": [
+				"psychic",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					]
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened"
+			],
+			"senses": [
+				"truesight 120 ft."
+            ],
+			"passive": 24,
+			"cr": "23",
+			"trait": [
+				{
+					"name": "Corrupted Soul",
+					"entries": [
+						"The Divine Horror’s weapon attacks are magical. When it hits with any weapon, the weapon deals an extra 10d8 psychic damage (included in the attack)."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The Divine Horror has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/day)",
+					"entries": [
+						"If the Divine Horror fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Warping Aura",
+					"entries": [
+						"All creatures that come within 20 ft. of the Divine Horror, or who start their turn within 20 ft., must roll on the following chart:",
+						{
+							"type": "table",
+							"caption": "Warping Aura Effect",
+							"colLabels": [
+								"{@dice d6}",
+								"Effect"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									{
+										"type": "cell",
+										"roll": {
+											"exact": 1,
+											"pad": true
+										}
+									},
+									"{@The creature becomes highly magnetised.} For each non-secured source of metal within 30 ft. (creatures count as singly sources, no matter how many items they are carrying) they are subjected to a ranged attack made with a {@hit 10} to hit, causing {@h}6 ({@damage 1d6+3}) bludgeoning damage on a hit. Creatures holding metal items may attempt to hold onto them by making a {@dc 18} Strength saving throw."
+								],
+								[
+									{
+										"type": "cell",
+										"roll": {
+											"exact": 2
+										}
+									},
+									"{@b The ground around the creature momentarily liquefies.} If the creature is standing on solidground they must succeed on a {@dc 18} Dexterity saving throw or be restrained. As an action, they or another creatures within 5 ft. can attempt to free them, requiring a {@dc 18} Strength (Athletics) check."
+								],
+								[
+									{
+										"type": "cell",
+										"roll": {
+											"exact": 3
+										}
+									},
+									"{b Gravity reverses for the creature.} They begin to fall upwards at a rate of 60 ft. per turn. This lasts until the beginning of their next turn."
+								],
+								[
+									{
+										"type": "cell",
+										"roll": {
+											"exact": 4
+										}
+									},
+									"{@b The creature is caught in a brief time loop.} They must attempt to repeat the actions of their previous turn. This does not consume any extra resources (spell slots, items, etc.)."
+								],
+								[
+									{
+										"type": "cell",
+										"roll": {
+											"exact": 5
+										}
+									},
+									"{@b The creature skips forward in time.} They disappear from play and reappear at the start of their next turn."
+								],
+								[
+									{
+										"type": "cell",
+										"roll": {
+											"exact": 6
+										}
+									},
+									"{@b An alien presence filters into their mind.} They must make a {@dc 18} Charisma saving throw or be dominted by the Divine Horror until the start of their next turn and gain the effect of a short-term madness. On as success, however, they gain a portion of it’s intellect, increasing their Intelligence to 30 for one minute."
+								]
+							]
+						}
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Elder Being makes two greatsword attacks."
+					]
+                },
+				{
+					"name": "Greatsword",
+					"entries": [
+						"{@atk mw} {@hit +17} to hit, range 10 ft., one target. {@h}24 ({@damage 4d6 + 10}) bludgeoning damage, plus {@h}40 ({@damage 10d8}) psychic damage."
+					]
+                },
+				{
+					"name": "Mind Rend",
+					"entries": [
+						"The Divine Horror tears into the mind of all creatures within 30 ft. The target must make a {@dc 25} Charisma save or take {@h}36 ({@damage 8d8}) psychic damage and gain one level of exhaustion."
+					]
+                }
+			],
+			"legendary": [
+				{
+					"name": "Options",
+					"entries": [
+						"The Divine Horror can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The Divine Horror regains spent legendary actions at the start of its turn."
+					]
+				},
+				{
+					"name": "Dread Gaze",
+					"entries": [
+						"The Divine Horror turns its gaze upon one creature that can see it. The target must make a {@dc 25} Charisma saving throw or suffer the effects of the {@spell confusion} spell."
+					]
+				},
+				{
+					"name": "Time Jump",
+					"entries": [
+						"The Divine Horror teleports to any location it occupied during its previous turn."
+					]
+				},
+				{
+					"name": "Writhing Charge",
+					"entries": [
+						"The Divine Horror moves up to its speed and makes a greatsword attack with advantage against one target."
+					]
+				}
+			],
+			"page": 0,
+			"tokenUrl": "https://i.imgur.com/UKCppzk.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/CXVczG6.jpg"
+						}
+					}
+				],
+				"entries": [
+					""
+				]
+			}
 		}
 	]
 }
