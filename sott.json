@@ -1141,6 +1141,140 @@
 					""
 				]
 			}
+		},
+		{
+			"source": "SoTT",
+			"name": "The Vulture",
+			"size": "M",
+			"type": "humanoid",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"studded leather"
+					]
+				}
+			],
+			"hp": {
+				"average": 115,
+				"formula": "10d10+60"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 40,
+				"climb": 30
+			},
+			"str": 12,
+			"dex": 21,
+			"con": 15,
+			"int": 10,
+			"wis": 16,
+			"cha": 20,
+			"save": {
+				"dex": "+6",
+				"str": "+6",
+				"con": "+2",
+				"cha": "+6"
+			},
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"senses": [
+				"blindsight 60 ft."
+            ],
+			"passive": 16,
+			"cr": "12",
+			"trait": [
+				{
+					"name": "Parlay",
+					"entries": [
+						"As sea faring tradition dictates, when a fellow sailor calls parlay, battle must be suspended until negotiations can be reached civilly. All characters who can understand the language within hearing distance must make a DC 20 Charisma saving throw or be bound by honor to end violent actions against the speaker until negotiations are ended. Characters that have advantage on saving throws against being charmed may make this save with advantage. Players with a Sailor Background or similar have disadvantage when attempting to ignore the call for parlay."
+					]
+				},
+				{
+					"name": "Lightfooted",
+					"entries": [
+						"The Vulture can take the Dash, Dodge or Disengage action as a bonus action on each of his turns."
+					]
+				},
+				{
+					"name": "Sea Legs",
+					"entries": [
+						"The Vulture has advantage on Dex and Str saving throws as long as he is on a waterborne vehicle."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The Vulture has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Vulture attacks once with his flintlock and twice with his rapier."
+					]
+                },
+				{
+					"name": "Rapier",
+					"entries": [
+						"{@atk mw} {@hit +10} to hit, range 5 ft., one target. {@h}16 ({@damage 2d6 + 10}) slashing damage."
+					]
+                },
+				{
+					"name": "Thundering Flintlock",
+					"entries": [
+						"{@atk rw} {@hit +9} to hit, range 30/90 ft., one target. {@h}10 ({@damage 2d10}) piercing damage, plus {@h}20 ({@damage 4d10}) fire damage on a failed {@dc 17} Constitution saving throw, or half as much on a successful one."
+					]
+                },
+				{
+					"name": "Word of the Captain {@recharge 5}",
+					"entries": [
+						"The Vulture speaks a word of command. All creatures on his ship within hearing distance must succeed on a {@dc 17} Charisma saving throw or follow the Captain's order to the best of their ability."
+					]
+                }
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"The Vulture adds 3 to his AC against one melee attack that would hit him. To do so, The Vulture must see the attacker and be wielding a melee weapon."
+					]
+				}
+			],
+			"page": 0,
+			"tokenUrl": "https://i.imgur.com/mtnivhg.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/y4dEySG.png"
+						}
+					}
+				],
+				"entries": [
+					""
+				]
+			}
 		}
 	]
 }
